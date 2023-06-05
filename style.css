@@ -16,21 +16,16 @@ img {
     width: 100%;
 }
 
-img:not(#accueil, #burger) {
-    filter: blur(3px);
-    border-radius: 3px;
-    transition: .3s ease-in-out;
+.projets img:hover{
+    opacity: 0.4 ;
 }
 
-.projets img:last-of-type {
+.projets img:last-of-type{
     filter: grayscale(100%);
 }
 
-img:hover {
-    filter: grayscale(0);
-}
-
-.projets img:last-of-type:hover {
+.projets img:last-of-type:hover{
+    opacity: 0.6;
     filter: grayscale(0);
 }
 
@@ -65,3 +60,5 @@ img:hover {
   }
 
   .dropdown:hover .dropdown-content {display: block;}
+
+
