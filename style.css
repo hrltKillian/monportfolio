@@ -5,17 +5,41 @@
 
 html {
     font-family: "FuturaLT";
+    color: #33343D;
 }
 
-#accueil, #burger {
-    height: 30px;
-    transition: all 0s;
+body {
+    background-color: #C7CBEE;
+}
+
+h1 {
+    color: #D2D6FA;
+    padding-left: 10px;
 }
 
 img {
     transition: 0.5s;
     object-fit: contain;
-    width: 100%;
+    width: 90vw;
+}
+
+.bannier {
+    object-fit:fill;
+    width: 90vw;
+    height: 70vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner .nom {
+    color: #C7CBEE;
+}
+
+.nom_div{
+    background-color:#5C5E6E;
+    max-width: fit-content;
 }
 
 .projets img:hover{
@@ -33,51 +57,70 @@ img {
     filter: grayscale(0);
 }
 
-.nav {
-    z-index: 3;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: auto;
-    display: flex;
-    background-color:#B0C4DE;
+.links_responsive {
+    display: none;
 }
 
-body:has(.nav:hover) .navbar{
-    visibility: visible;
-    background-color: 	#DDA0DD;
-}
-
-body:has(.lien:hover) .navbar{
-    transition: 2.5s;
-    visibility: hidden;
-}
-
-.navbar {
-    visibility: hidden;
-    background-color: 	#DDA0DD;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: auto;
-    display: flex;
-    flex-wrap: wrap;
+.links_responsive {
     flex-direction: column;
-  }
-  
-  .navbar a {
-    
-    float: left;
-    display: block;
-    color: #4B0082;
+    z-index: 2;
+    height: auto;
+    background: #5C5E6E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .navbar a:hover {
-    background: #FFE4B5;
-    color: rgb(255,0,255);
-  }
-  
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.links_responsive ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2em;
+    padding-right: 2em;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.links_responsive a {
+    color: #D2D6FA;
+}
+
+.links_responsive ul li:nth-of-type(1) {
+    font-size: 30px;
+    color: #D2D6FA;
+}
+
+#toggle:checked+.links_responsive {
+    display: flex;
+}
+
+.burger {
+    display: block;
+    position: absolute;
+    right: 1em;
+    font-size: 30px;
+    color: #D2D6FA;
+    cursor: pointer;
+    z-index: 99;
+}
+
+label, #toggle {
+    display: none;
+}
+
+.fixed {
+    background-color: #5C5E6E;
+    position: sticky;
+    top: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    
+}
+.links {
+    display: none;
+}
