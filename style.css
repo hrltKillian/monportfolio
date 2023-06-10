@@ -7,40 +7,127 @@ html {
   color: #33343D;
 }
 
+h1, h2, h3 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.3em;
+}
+
 body {
   background-color: #C7CBEE;
 }
 
+h1, h2, h3, #first_formu {
+  margin: 16vw 0vw 16vw 0vw;
+}
+
+#first_formu {
+  margin: 20vw 0vw 4vw 0vw;;
+}
+
+.label_formu {
+  margin: 10vw 0vw 4vw 0vw;
+}
+
 h1 {
-  color: #D2D6FA;
-  padding-left: 10px;
+  color: #dddddd;
+  padding-left: 5vw;
+}
+
+button {
+  font-family: "FuturaLT";
+  width: 100%;
+  height: 15vw;
+  font-size: 1.5em;
+  color: #dddddd;
+  background-color: #8a92d1;
+  border-color: #333e92;
+  margin: 1vw;
+}
+
+hr {
+  width: 130%;
+  height: 1.5vw;
+  margin: 15vw 0vw 5vw -2vw;
+  background-color: #333e92;
 }
 
 img {
   transition: 0.5s;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 90vw;
+  object-fit: contain;
+  width: 90%;
+  margin: 5%;
+  border-color: #333e92;
+  border-style: solid;
+  border-radius: 12vw;
+  border-width: 1vw;
 }
 
-.bannier {
-  -o-object-fit: fill;
-     object-fit: fill;
-  width: 90vw;
-  height: 70vw;
+.contact form input, .contact form textarea {
+  width: 98%;
+}
+
+.etudes ul {
+  font-size: 1.3em;
+  list-style: none;
+  text-align: left;
 }
 
 a {
   text-decoration: none;
 }
 
+form label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form *:not(hr) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: left;
+  background-color: #5C5E6E;
+  color: #dddddd;
+}
+
+.date {
+  padding: 4vw;
+  border-radius: 2vw;
+  border-style: solid;
+  border-color: #333e92;
+}
+
+.projets .etudes .articles {
+  display: inline-flex;
+}
+
+.projets {
+  text-align: center;
+}
+
+.etudes {
+  text-align: center;
+}
+
+.articles {
+  text-align: center;
+}
+
 .banner .nom {
-  color: #C7CBEE;
+  color: #dddddd;
 }
 
 .nom_div {
   background-color: #5C5E6E;
-  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
@@ -89,12 +176,12 @@ a {
 }
 
 .links_responsive a {
-  color: #D2D6FA;
+  color: #dddddd;
 }
 
 .links_responsive ul li:nth-of-type(1) {
   font-size: 30px;
-  color: #D2D6FA;
+  color: #dddddd;
 }
 
 #toggle:checked + .links_responsive {
@@ -104,9 +191,10 @@ a {
 .burger {
   display: block;
   position: absolute;
-  right: 1em;
+  top: 0.2em;
+  right: 0.5em;
   font-size: 30px;
-  color: #D2D6FA;
+  color: #dddddd;
   cursor: pointer;
   z-index: 99;
 }
